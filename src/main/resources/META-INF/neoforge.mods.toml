@@ -26,6 +26,3 @@ type = "required"
 versionRange = "[1.21.4,)"
 ordering = "NONE"
 side = "BOTH"
-
-[[mixins]]
-config = "example_mod.mixins.json"
