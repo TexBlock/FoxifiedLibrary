@@ -28,7 +28,7 @@ public class FoxifiedLoaderImpl implements FoxifiedLoader {
 
     @Override
     public Optional<ModContainer> getModContainer(String id) {
-        return (Optional<ModContainer>) ModList.get().getModContainerById(id);
+        return ModList.get().getModContainerById(id).map(modContainer -> modContainer);
     }
 
     @Override
